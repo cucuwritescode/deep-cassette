@@ -1,0 +1,30 @@
+name: neural-cassette
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.0.*
+  - torchaudio=2.0.*
+  - torchvision=0.15.*
+  - pytorch-cuda=11.8
+  - pip
+  - pip:
+    - numpy>=1.23
+    - scipy>=1.9
+    - matplotlib>=3.6
+    - librosa>=0.10
+    - soundfile>=0.12
+    - pandas>=1.5
+    - tensorboard>=2.11
+    - tqdm>=4.64
+    - pyyaml>=6.0
+    - pedalboard>=0.7  # For VST processing
+    - auraloss>=0.3
+    - pyloudnorm>=0.1
+    - scikit-learn>=1.2
+    - wandb>=0.13  # Optional: for experiment tracking
+    - jupyter>=1.0
+    - ipykernel>=6.19
+EOF < /dev/null
