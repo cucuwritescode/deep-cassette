@@ -1,4 +1,4 @@
-# Neural Cassette Modeling 
+# Neural Cassette Modelling 
 
 Neural modeling of cassette tape recorders, specifically trained on the **Tascam Portastudio 424 MkII**.
 
