@@ -1,8 +1,11 @@
-# Neural Cassette Modeling 
+# Neural Cassette Modelling 
 
 Neural modeling of cassette tape recorders, specifically trained on the **Tascam Portastudio 424 MkII**.
 
 This project builds upon the work of Otto Mikkonen's [neural-tape-modeling](https://github.com/01tot10/neural-tape-modeling) research, adapting it for cassette tape characteristics rather than reel-to-reel machines.
+
+<p align="center">
+<img width="280" height="350" alt="Screenshot 2025-09-04 at 15 24 18" src="https://github.com/user-attachments/assets/6089ad93-e732-49ea-849b-d2bb6602048b" />
 
 ## Project Structure
 
@@ -28,6 +31,10 @@ neural-cassette-modelling/
 
 ## Key Differences: Cassette vs Reel-to-Reel
 
+  <p align="center">
+      <img width="300" height="170" alt="Screenshot 2025-09-04 at 15 24 38" src="https://github.com/user-attachments/assets/c63dd852-88d7-4af3-b7f1-6b22c80e5267" />
+
+
 The Tascam Portastudio 424 MkII presents unique modeling challenges:
 
 - **Frequency Response**: More limited bandwidth (typically 40Hz-15kHz)
@@ -37,6 +44,7 @@ The Tascam Portastudio 424 MkII presents unique modeling challenges:
 - **Saturation Characteristics**: Different magnetic particle formulations
 - **Wow & Flutter**: Distinct patterns from cassette transport mechanism
 - **Crosstalk**: Between adjacent tracks on narrow tape width
+
 
 ## Setup
 
@@ -91,6 +99,6 @@ python src/training/train.py --config experiments/configs/tascam_424.yaml
 
 ## Acknowledgments
 
-- Otto Mikkonen and Eloi Moliner Juanpere for the [neural-tape-modeling](https://github.com/01tot10/neural-tape-modeling) foundation and encouragement
-- Jatin Chowdhury for [AnalogTapeModel](https://github.com/jatinchowdhury18/AnalogTapeModel) and real-time DSP insights
+- Otto Mikkonen and Eloi Moliner Juanpere for the [neural-tape-modeling](https://github.com/01tot10/neural-tape-modeling) foundation and personal encouragement
+- Jatin Chowdhury for [AnalogTapeModel](https://github.com/jatinchowdhury18/AnalogTapeModel) and real-time DSP advise 
 
