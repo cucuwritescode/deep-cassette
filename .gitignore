@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyTorch
+*.pth
+*.pt
+checkpoint/
+runs/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Audio data (large files)
+*.wav
+*.mp3
+*.flac
+*.aiff
+audio/
+recordings/
+
+# Model weights (except specific ones we want to track)
+weights/*.pth
+weights/*.pt
+!weights/.gitkeep
+
+# Logs
+logs/
+*.log
+tensorboard/
+wandb/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Dataset symlinks
+audio
